@@ -1,4 +1,4 @@
 package com.raynermdz.sfgpetclinic.model;
 
-public class Vet {
+public class Vet extends Person {
 }
