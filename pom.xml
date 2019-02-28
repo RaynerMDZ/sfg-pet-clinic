@@ -14,7 +14,7 @@
     </parent>
     <groupId>com.raynermdz</groupId>
     <artifactId>sfg-pet-clinic</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.4-SNAPSHOT</version>
     <name>sfg-pet-clinic</name>
     <description>SFG Pet Clinic Project</description>
 
@@ -22,17 +22,45 @@
         <java.version>1.8</java.version>
     </properties>
 
+    <!--<build>-->
+        <!--<plugins>-->
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-release-plugin</artifactId>-->
+                <!--<version>2.4.2</version>-->
+                <!--<configuration>-->
+                    <!--<tagNameFormat>v@{project.version}</tagNameFormat>-->
+                    <!--<autoVersionSubmodules>true</autoVersionSubmodules>-->
+                    <!--<releaseProfiles>releases</releaseProfiles>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
+        <!--</plugins>-->
+    <!--</build>-->
+
+    <distributionManagement>
+        <repository>
+            <id>nexus-releases</id>
+            <url>http://localhost:8081/nexus/content/repositories/releases</url>
+        </repository>
+    </distributionManagement>
     <build>
+        <!-- To define the plugin version in your parent POM -->
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-deploy-plugin</artifactId>
+                    <version>3.0.0-M1</version>
+                </plugin>
+
+            </plugins>
+        </pluginManagement>
+        <!-- To use the plugin goals in your POM or parent POM -->
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-release-plugin</artifactId>
-                <version>2.4.2</version>
-                <configuration>
-                    <tagNameFormat>v@{project.version}</tagNameFormat>
-                    <autoVersionSubmodules>true</autoVersionSubmodules>
-                    <releaseProfiles>releases</releaseProfiles>
-                </configuration>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>3.0.0-M1</version>
             </plugin>
         </plugins>
     </build>
@@ -41,6 +69,7 @@
         <connection>scm:git:https://github.com/RaynerMDZ/sfg-pet-clinic.git</connection>
         <url>https://github.com/RaynerMDZ/sfg-pet-clinic</url>
         <developerConnection>scm:git:https://github.com/RaynerMDZ/sfg-pet-clinic.git</developerConnection>
+    <tag>HEAD</tag>
   </scm>
 
 </project>
