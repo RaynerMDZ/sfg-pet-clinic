@@ -39,6 +39,13 @@
         </plugins>
     </build>
 
+    <distributionManagement>
+        <repository>
+            <id>nexus-releases</id>
+            <url>http://localhost:8081/nexus/content/repositories/releases</url>
+        </repository>
+    </distributionManagement>
+
     <scm>
         <connection>scm:git:https://github.com/RaynerMDZ/sfg-pet-clinic.git</connection>
         <url>https://github.com/RaynerMDZ/sfg-pet-clinic</url>
