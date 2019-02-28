@@ -40,10 +40,8 @@
     </build>
 
     <scm>
-        <developerConnection>
-            scm:git:github.com/RaynerMDZ/sfg-pet-clinic.git
-        </developerConnection>
-      <tag>HEAD</tag>
-  </scm>
+        <developerConnection>scm:git:https://github.com/RaynerMDZ/sfg-pet-clinic.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
 
 </project>
