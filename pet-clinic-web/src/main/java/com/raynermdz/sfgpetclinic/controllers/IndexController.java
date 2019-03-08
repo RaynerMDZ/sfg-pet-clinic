@@ -11,7 +11,7 @@ public class IndexController {
   public String index(Model model) {
 
     String index = "Hi Everyone!";
-    
+
     model.addAttribute("index", index);
     return "index";
   }
