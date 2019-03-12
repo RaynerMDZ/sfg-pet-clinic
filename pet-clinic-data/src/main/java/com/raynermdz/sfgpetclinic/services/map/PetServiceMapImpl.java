@@ -1,11 +1,11 @@
 package com.raynermdz.sfgpetclinic.services.map;
 
 import com.raynermdz.sfgpetclinic.model.Pet;
-import com.raynermdz.sfgpetclinic.services.CrudService;
+import com.raynermdz.sfgpetclinic.services.PetService;
 
 import java.util.Set;
 
-public class PetServiceMapImpl extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+public class PetServiceMapImpl extends AbstractMapService<Pet, Long> implements PetService {
 
   @Override
   public Set<Pet> findAll() {
