@@ -1,1 +1,5 @@
+com/raynermdz/sfgpetclinic/controllers/IndexController.class
+com/raynermdz/sfgpetclinic/controllers/OwnerController.class
 com/raynermdz/sfgpetclinic/SfgPetClinicApplication.class
+com/raynermdz/sfgpetclinic/controllers/VetController.class
+com/raynermdz/sfgpetclinic/bootstrap/DataLoader.class
