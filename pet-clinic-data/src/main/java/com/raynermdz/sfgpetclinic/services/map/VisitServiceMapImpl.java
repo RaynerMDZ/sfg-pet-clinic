@@ -1,7 +1,7 @@
 package com.raynermdz.sfgpetclinic.services.map;
 
 import com.raynermdz.sfgpetclinic.model.Visit;
-import com.raynermdz.sfgpetclinic.services.springdatajpa.VisitService;
+import com.raynermdz.sfgpetclinic.services.VisitService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;

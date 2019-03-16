@@ -1,7 +1,6 @@
-package com.raynermdz.sfgpetclinic.services.springdatajpa;
+package com.raynermdz.sfgpetclinic.services;
 
 import com.raynermdz.sfgpetclinic.model.Visit;
-import com.raynermdz.sfgpetclinic.services.CrudService;
 
 public interface VisitService extends CrudService<Visit, Long> {
 }
